@@ -12,7 +12,9 @@ export const createUser = async (req, res) => {
 
 export const getAllUser = async (req, res) => {
   try {
-    const users = await userService.getAllUsers();
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const users = await userService.getAllUsers(page, limit);
     res.status(200).json(users);
   } catch (error) {
     res.status(500).json({ error: error.message });

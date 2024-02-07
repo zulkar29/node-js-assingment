@@ -10,9 +10,11 @@ class UserService {
     }
   }
 
-  async getAllUsers() {
+  async getAllUsers(page = 1, limit = 10) {
     try {
-      const users = await User.find();
+      const users = await User.find()
+        .skip((page - 1) * limit)
+        .limit(limit);
       return users;
     } catch (error) {
       throw error;
