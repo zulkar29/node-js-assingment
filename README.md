@@ -1,6 +1,7 @@
-# Node.js Assignments Project
+# Node.js Assignments
 
-**Completed Time:** Approximately 3 hours
+## Completed Time
+Approximately 4 hours
 
 ## Technology
 - **API:** Express.js, MongoDB
@@ -11,29 +12,45 @@
 The project follows a Service-Controller-Model architecture.
 
 ### How to Run
+
+#### Option 1: Using Docker
+
 1. **Clone the project:**
    ```
    git clone https://github.com/zulkar29/node-js-assingment.git
    ```
+
 2. **Build Docker image:**
    ```
    docker build -t my-node-app .
    ```
+
 3. **Run Docker container:**
    ```
    docker run -p 3001:3001 my-node-app
    ```
-   **Or**
-   
-   1. **Download code**
-   2. **Install dependencies:**
-      ```
-      npm install
-      ```
-   3. **Run the project:**
-      ```
-      npm run dev
-      ```
+
+#### Option 2: Without Docker
+
+1. **Clone the project:**
+   ```
+   git clone https://github.com/zulkar29/node-js-assingment.git
+   ```
+
+2. **Navigate to the project directory:**
+   ```
+   cd node-js-assingment
+   ```
+
+3. **Install dependencies:**
+   ```
+   npm install
+   ```
+
+4. **Run the project:**
+   ```
+   npm run dev
+   ```
 
 ### URLs
 - **Base URL:** [http://localhost:3001/](http://localhost:3001/)
